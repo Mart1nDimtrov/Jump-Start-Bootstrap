@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Horizontal Form</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="nameField" class="col-xs-2">Name</label>
+				<div class="col-xs-10">
+				<input type="text" class="form-control" id="nameField" 
+				placeholder="Your Name" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="emailField" class="col-xs-2">Email</label>
+				<div class="col-xs-10">
+				<input type="email" class="form-control" id="emailField" 
+				placeholder="Your Email" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="phoneField" class="col-xs-2">Phone</label>
+				<div class="col-xs-10">
+				<input type="text" class="form-control" id="phoneField" 
+				placeholder="Your Phone Number" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="descField" class="col-xs-2">Description</label>
+				<div class="col-xs-10">
+				<textarea class="form-control" id="descField" placeholder="
+				Your Comments"></textarea>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button> 
+			<button type="reset" class="btn btn-default">Reset</button>
+		</form>
+	</div>
+</body>
+</html>
