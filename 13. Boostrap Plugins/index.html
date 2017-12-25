@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Bootstrap Plugins</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-pills">
+		<li class="active"><a href="#">Home</a></li>
+		<li class="dropdown" id="myDropdown">
+			<a data-toggle="dropdown" data-target="#" 
+			href="http://www.google.com">
+			Profile <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Messages</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#myDropdown').on('show.bs.dropdown', function () {
+				console.log("Opening dropdown..");
+				});
+			$('#myDropdown').on('shown.bs.dropdown', function () {
+				console.log("Dropdown opened..");
+			});
+			$('#myDropdown').on('hide.bs.dropdown', function () {
+				console.log("Hiding dropdown..");
+			});
+			$('#myDropdown').on('hidden.bs.dropdown', function () {
+				console.log("Dropdown hidden..");
+			});
+		});
+	</script>
+</body>
+</html>
