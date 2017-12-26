@@ -1,0 +1,13 @@
+.container {
+	padding-top: 2%;
+}
+
+.btn {
+	font-size: 20px;
+	padding: 5px 10px;
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: green;
+}
